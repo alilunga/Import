@@ -4,7 +4,6 @@
 import calendar  # Core Python Module
 from datetime import datetime  # Core Python Module
 
-import plotly.graph_objects as go  # pip install plotly
 import streamlit as st  # pip install streamlit
 from streamlit_option_menu import option_menu  # pip install streamlit-option-menu
 
@@ -21,18 +20,6 @@ layout = "centered"
 st.set_page_config(page_title=page_title, page_icon=page_icon, layout=layout)
 st.title(page_title + " " + page_icon)
 
-# --- DROP DOWN VALUES FOR SELECTING THE PERIOD ---
-years = [datetime.today().year, datetime.today().year + 1]
-months = list(calendar.month_name[1:])
-
-
-# --- NAVIGATION MENU ---
-selected = option_menu(
-    menu_title=None,
-    options=["Data Entry", "Data Visualization"],
-    icons=["pencil-fill", "bar-chart-fill"],  # https://icons.getbootstrap.com/
-    orientation="horizontal",
-)
 
 # --- INPUT & SAVE PERIODS ---
 if selected == "Data Entry":
