@@ -2,7 +2,6 @@ import calendar  # Core Python Module
 from datetime import datetime  # Core Python Module
 
 import streamlit as st  # pip install streamlit
-from streamlit_option_menu import option_menu  # pip install streamlit-option-menu
 
 
 # -------------- SETTINGS --------------
