@@ -20,3 +20,6 @@ st.title(page_title + " " + page_icon)
 years = [datetime.today().year, datetime.today().year + 1]
 months = list(calendar.month_name[1:])
 
+# ---- INPUT 
+nom = st.text_input("First name")
+
