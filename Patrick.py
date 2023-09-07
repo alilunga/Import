@@ -8,7 +8,7 @@ import streamlit as st  # pip install streamlit
 incomes = ["Salary", "Blog", "Other Income"]
 expenses = ["Rent", "Utilities", "Groceries", "Car", "Other Expenses", "Saving"]
 currency = "USD"
-page_title = "Patrick Import"
+page_title = "BAILCH Import"
 page_icon = ":money_with_wings:"  # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
 layout = "centered"
 # --------------------------------------
