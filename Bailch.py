@@ -29,4 +29,10 @@ db = deta.Base("Test")
 
 if submitted:
     db.put({"id":id, "name":name, "last":last})
+
+def identity():
+    """Returns a list"""
+    res = db.fetch()
+    return res.items
     
+identity()
