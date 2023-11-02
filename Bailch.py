@@ -29,11 +29,3 @@ db = deta.Base("BSHT")
 
 if submitted:
     db.put({"key":id, "name":name, "last":last})
-
-def identity():
-    """Returns a list"""
-    res = db.fetch()
-    return res.items
-    
-identity()
-st.write ("Servir")
