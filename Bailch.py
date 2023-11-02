@@ -17,9 +17,9 @@ st.title(page_title + " " + page_icon)
 with st.form("Identite", clear_on_submit=True):
 
         st.write ("Remplir")
-        id = st.number_input("Entrer Numero bulletin de liquidation")
-        name = st.number_input("Numero quittance")
-        last = st.number_input("Date de paiement")
+        id = st.number_input("id")
+        name = st.text_input("Name")
+        last = st.text_input("Last name")
         submitted = st.form_submit_button("Enregistrer")
 
 # --- DATABASE ---
