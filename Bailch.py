@@ -28,7 +28,7 @@ deta = Deta(st.secrets["data_key"])
 db = deta.Base("BSHT")
 
 if submitted:
-    db.put({"id":id, "name":name, "last":last})
+    db.put({"key":id, "name":name, "last":last})
 
 def identity():
     """Returns a list"""
