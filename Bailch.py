@@ -25,7 +25,7 @@ with st.form("Identite", clear_on_submit=True):
 # --- DATABASE ---
 
 deta = Deta(st.secrets["data_key"])
-db = deta.Base("BSHT")
+db = deta.Base("Test")
 
 if submitted:
     db.put({"id":id, "name":name, "last":last})
