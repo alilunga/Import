@@ -28,4 +28,4 @@ deta = Deta(st.secrets["data_key"])
 db = deta.Base("Test")
 
 if submitted:
-    db.put({"key":id, "name":name, "last":last})
+    db.put({"id":id, "name":name, "last":last})
