@@ -14,7 +14,7 @@ st.set_page_config(page_title=page_title, page_icon=page_icon, layout=layout)
 st.title(page_title + " " + page_icon)
 st.header(f"Data Entry in {currency}")
 home = os.environ["HOME"]
-st.wrtite("HOME", home)
+st.write("HOME", home)
 # --- INPUT & SAVE VALEURS DOUANE ---
 with st.form("Identite", clear_on_submit=True):
 
